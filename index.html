@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="title">🔐 SecureGen</h1>
+        <p class="subtitle">Generate ultra-secure passwords instantly</p>
+      </div>
+
+      <div class="password-display">
+        <div class="password-text" id="passwordOutput">
+          Click generate to create your password
+        </div>
+        <div class="password-actions">
+          <button
+            class="action-btn copy-btn"
+            id="copyBtn"
+            style="display: none"
+          >
+            📋 Copy
+          </button>
+        </div>
+      </div>
+
+      <button class="generate-btn" id="generateBtn">
+        ⚡ Generate Password
+      </button>
+
+      <div class="settings">
+        <h3 class="settings-title">🎛️ Customize Your Password</h3>
+
+        <div class="length-control">
+          <div class="length-label">
+            <span>Password Length</span>
+            <span class="length-value" id="lengthValue">12</span>
+          </div>
+          <input
+            type="range"
+            class="length-slider"
+            id="lengthSlider"
+            min="4"
+            max="50"
+            value="12"
+          />
+        </div>
+
+        <div class="options-grid">
+          <div class="option-item active" data-option="lowercase">
+            <div class="option-info">
+              <div
+                class="option-icon"
+                style="
+                  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+                  color: white;
+                "
+              >
+                a
+              </div>
+              <div>
+                <div class="option-text">Lowercase Letters</div>
+                <div class="option-example">abcdefgh...</div>
+              </div>
+            </div>
+            <div class="toggle active" data-toggle="lowercase"></div>
+          </div>
+
+          <div class="option-item" data-option="uppercase">
+            <div class="option-info">
+              <div
+                class="option-icon"
+                style="
+                  background: linear-gradient(135deg, #10b981, #059669);
+                  color: white;
+                "
+              >
+                A
+              </div>
+              <div>
+                <div class="option-text">Uppercase Letters</div>
+                <div class="option-example">ABCDEFGH...</div>
+              </div>
+            </div>
+            <div class="toggle" data-toggle="uppercase"></div>
+          </div>
+
+          <div class="option-item" data-option="numbers">
+            <div class="option-info">
+              <div
+                class="option-icon"
+                style="
+                  background: linear-gradient(135deg, #f59e0b, #d97706);
+                  color: white;
+                "
+              >
+                1
+              </div>
+              <div>
+                <div class="option-text">Numbers</div>
+                <div class="option-example">0123456789</div>
+              </div>
+            </div>
+            <div class="toggle" data-toggle="numbers"></div>
+          </div>
+
+          <div class="option-item" data-option="symbols">
+            <div class="option-info">
+              <div
+                class="option-icon"
+                style="
+                  background: linear-gradient(135deg, #ef4444, #dc2626);
+                  color: white;
+                "
+              >
+                @
+              </div>
+              <div>
+                <div class="option-text">Special Symbols</div>
+                <div class="option-example">!@#$%^&*</div>
+              </div>
+            </div>
+            <div class="toggle" data-toggle="symbols"></div>
+          </div>
+        </div>
+
+        <div class="strength-indicator">
+          <div class="strength-label">Password Strength</div>
+          <div class="strength-bar">
+            <div
+              class="strength-fill"
+              id="strengthFill"
+              style="width: 0%"
+            ></div>
+          </div>
+          <div class="strength-text" id="strengthText">
+            Select options to see strength
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
