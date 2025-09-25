@@ -1,4 +1,4 @@
-// Character sets
+// Character sets 
 const CHAR_SETS = {
   lowercase: "abcdefghijklmnopqrstuvwxyz",
   uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
