@@ -12,7 +12,7 @@ const copyBtn = document.getElementById("copyBtn");
 const passwordOutput = document.getElementById("passwordOutput");
 const lengthSlider = document.getElementById("lengthSlider");
 const lengthValue = document.getElementById("lengthValue");
-const strengthFill = document.getElementById("strengthFill");
+const strengthFill = document.getElementyId("strengthFill");
 const strengthText = document.getElementById("strengthText");
 
 // State
