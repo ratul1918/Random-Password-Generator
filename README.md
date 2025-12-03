@@ -10,7 +10,7 @@ This project was inspired by an existing GitHub implementation; I've built on th
 
 - Choose desired password length (e.g. 8 ‒ 32 characters or more) 
 - Toggle inclusion of:
-  - Uppercase letters (A–Z)
+  - Uppercase letters (A–Z) 
   - Lowercase letters (a–z)
   - Numbers (0–9)
   - Symbols (e.g. `!@#$%^&*()_+`)
