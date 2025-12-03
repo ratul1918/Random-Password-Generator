@@ -3,7 +3,7 @@
 A simple, lightweight **HTML / CSS / JavaScript** application that generates secure random passwords of adjustable length, including options for including/excluding uppercase letters, lowercase letters, numbers, and symbols.
 
 This project was inspired by an existing GitHub implementation; I've built on the idea, added my own styling, logic, and improvements.
-
+ 
 ---
 
 ## 📌 Features
